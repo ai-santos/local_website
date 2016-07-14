@@ -1,0 +1,138 @@
+body, html {
+  font-family: sans-serif;
+  height: 100%;
+  width: 100%;
+
+  background-color: purple;
+}
+
+.parallax-background{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax-background video {
+  /*position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;*/
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.page-content{
+  position: relative;
+  z-index: 1;
+  padding-top: 115px;
+}
+
+.example-thing{
+  border: 50px solid white;
+  min-height: 100px;
+}
+
+header {
+  width: 100%;
+  height: 115px;
+}
+
+header.fixed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav.overlay {
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+nav .logo {
+  width: 75px;
+  height: 75px;
+  background-image: url("../images/vfix-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  flex-direction: row;
+  padding-left: 25px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3em;
+}
+
+nav.overlay li a {
+  color: black;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+img.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whyVFix {
+  display: flex;
+  flex: 1;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: lightblue;
+}
+
+.money {
+  order: 0;
+  width: 300px;
+  text-align: center;
+
+}
+
+.support {
+  order: 1;
+  width: 300px;
+  text-align: center;
+}
+
+.satisfaction {
+  order: 2;
+  width: 300px;
+  text-align: center;
+}
+
+.scheduling {
+  order: 3;
+  width: 300px;
+  text-align: center;
+}
+
+.title {
+  margin: 10px
+}
