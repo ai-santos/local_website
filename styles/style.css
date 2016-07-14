@@ -136,3 +136,14 @@ img.center {
 .title {
   margin: 10px
 }
+
+.money:hover *{
+  width: 50px;
+  height: 50px;
+  font-size: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all 5s ease;
+  -moz-transition: 5s ease;
+  transition: 5s ease;
+}
