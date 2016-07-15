@@ -2,7 +2,7 @@ body, html {
   font-family: sans-serif;
   height: 100%;
   width: 100%;
-  background-color: purple;
+  background-color: white;
 }
 
 /*.parallax__group {
@@ -14,6 +14,16 @@ body, html {
 h1 {
   font-size: 35px;
   color: white;
+}
+
+.service-item h2, .service-item p {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.services div img {
+  width: 30%;
+  height: 30%;
 }
 
 .parallax-background{
@@ -68,7 +78,7 @@ nav.overlay {
   box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
 
-nav.logo {
+nav .logo {
   width: 75px;
   height: 75px;
   background-image: url("../images/vfix-logo.png");
@@ -114,57 +124,40 @@ section.whyVFix {
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-color: lightblue;
+  background-color: #4FC3F7;
 }
 
 .flexbox-grid {
   display: flex;
-  flex: 1;
   margin: 0px;
   justify-content: center;
   align-items: center;
   height: 500px;
   opacity: .8;
-  background-color: grey;
+  background-color: #212121;
 }
 
-
-.money {
-  order: 0;
-  width: 300px;
-  text-align: center;
-
-}
-
-.support {
-  order: 1;
-  width: 300px;
+.flexbox-grid * {
   text-align: center;
 }
 
-.satisfaction {
-  order: 2;
-  width: 300px;
+section .services {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex: 4;
+  height: auto;
+  min-height: 200px;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.service-item {
+  width: 25%;
   text-align: center;
 }
 
-.scheduling {
-  order: 3;
-  width: 300px;
-  text-align: center;
-}
 
 .title {
   margin: 10px
-}
-
-.money:hover *{
-  width: 50px;
-  height: 50px;
-  font-size: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-transition: all 5s ease;
-  -moz-transition: 5s ease;
-  transition: 5s ease;
 }
