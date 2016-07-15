@@ -16,6 +16,11 @@ h1 {
   color: white;
 }
 
+.tagline {
+  font-size: 36px;
+  color: #F4511E;
+}
+
 .service-item h2, .service-item p {
   width: 300px;
   margin: 0 auto;
@@ -118,15 +123,6 @@ img.center {
   margin-right: auto;
 }
 
-section.whyVFix {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  background-color: #4FC3F7;
-}
-
 .flexbox-grid {
   display: flex;
   margin: 0px;
@@ -152,19 +148,29 @@ section .services {
   align-content: space-around;
 }
 
+section.whyVFix {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  background-color: #4FC3F7;
+}
+
 .service-item {
   width: 25%;
   text-align: center;
 }
 
-
-.title {
-  margin: 10px
+h2 {
+  margin: 10px;
+  font-weight: bold;
 }
 
 .whyVFix div {
   height: 150px;
   width: 250px;
+  text-align: center;
 }
 
 .zoom-in * {
