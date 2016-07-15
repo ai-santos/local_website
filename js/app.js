@@ -2,6 +2,7 @@ window.addEventListener( 'scroll', function( event ) {
   setOverlay( window.pageYOffset );
   zoom_out( window.pageYOffset );
   zoom_in( window.pageYOffset );
+  console.log(window.pageYOffset);
 });
 
 function setOverlay( yOffset ) {
@@ -14,8 +15,12 @@ function setOverlay( yOffset ) {
   }
 }
 
-function zoomableDivs() {
+function zoomableVFixDivs() {
   return document.querySelectorAll( '.whyVFix div' );
+}
+
+function zoomableServicesDivs() {
+  return document.querySelectorAll( '.service-item' );
 }
 
 function applyZoomOut( item ) {
@@ -25,7 +30,8 @@ function applyZoomOut( item ) {
 
 function zoom_out( yOffset ) {
   if( yOffset == 0 ) {
-    zoomableDivs().forEach( applyZoomOut );
+    zoomableVFixDivs().forEach( applyZoomOut );
+    zoomableServicesDivs().forEach( applyZoomOut );
   }
 }
 
@@ -36,6 +42,10 @@ function applyZoomIn( item ) {
 
 function zoom_in( yOffset ) {
   if( yOffset > 2 ) {
-    zoomableDivs().forEach( applyZoomIn );
+    zoomableVFixDivs().forEach( applyZoomIn );
+  }
+
+  if( yOffset > 700 ) {
+    zoomableServicesDivs().forEach( applyZoomIn );
   }
 }
