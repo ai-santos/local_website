@@ -19,6 +19,8 @@ body, html {
 .services-title {
   font-size: 36px;
   color: black;
+  text-align: center;
+  padding: .5em;
 }
 
 .service-item h2 {
@@ -152,16 +154,17 @@ img.center {
   text-align: center;
 }
 
-section .services {
+section.services {
+  background-color: #FFFFFF;
+}
+
+.service-items {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex: 4;
-  height: auto;
   min-height: 200px;
   flex-wrap: wrap;
   align-content: space-around;
-  background-color: #FFFFFF;
 }
 
 section.whyVFix {
@@ -174,7 +177,7 @@ section.whyVFix {
 }
 
 .service-item {
-  width: 25%;
+  flex: 1 0 200px;
   text-align: center;
 }
 
