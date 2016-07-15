@@ -2,8 +2,18 @@ body, html {
   font-family: sans-serif;
   height: 100%;
   width: 100%;
-
   background-color: purple;
+}
+
+/*.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}*/
+
+h1 {
+  font-size: 35px;
+  color: white;
 }
 
 .parallax-background{
@@ -58,7 +68,7 @@ nav.overlay {
   box-shadow: 0 5px 5px rgba(0,0,0,0.2);
 }
 
-nav .logo {
+nav.logo {
   width: 75px;
   height: 75px;
   background-image: url("../images/vfix-logo.png");
@@ -98,15 +108,26 @@ img.center {
   margin-right: auto;
 }
 
-.whyVFix {
+section.whyVFix {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-color: lightblue;
+}
+
+.flexbox-grid {
   display: flex;
   flex: 1;
   margin: 0px;
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-color: lightblue;
+  opacity: .8;
+  background-color: grey;
 }
+
 
 .money {
   order: 0;
