@@ -18,7 +18,11 @@ body, html {
 
 .services-title {
   font-size: 36px;
-  color: #FFFFFF;
+  color: black;
+}
+
+.service-item {
+  font-size: 20px;
 }
 
 .tagline {
@@ -29,6 +33,9 @@ body, html {
 .service-item h2, .service-item p {
   width: 300px;
   margin: 0 auto;
+  padding-top: 20px;
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .services div img {
@@ -95,6 +102,7 @@ nav .logo {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  margin-left: 50px;
 }
 
 nav ul {
@@ -111,6 +119,8 @@ nav li a {
   text-decoration: none;
   color: white;
   font-size: 1.3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-right: 50px;
 }
 
 nav.overlay li a {
@@ -151,6 +161,7 @@ section .services {
   min-height: 200px;
   flex-wrap: wrap;
   align-content: space-around;
+  background-color: #FFFFFF;
 }
 
 section.whyVFix {
@@ -167,9 +178,22 @@ section.whyVFix {
   text-align: center;
 }
 
+
 h2 {
   margin: 10px;
   font-weight: bold;
+}
+
+.service-item p {
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.title {
+  margin: 10px
 }
 
 .whyVFix div {
