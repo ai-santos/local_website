@@ -11,19 +11,38 @@ body, html {
   transform-style: preserve-3d;
 }*/
 
-h1 {
-  font-size: 35px;
-  color: white;
+.tagline {
+  font-size: 36px;
+  color: #F4511E;
+}
+
+.services-title {
+  font-size: 36px;
+  color: black;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.service-item h2 {
+  font-size: 20px;
+}
+
+.tagline {
+  font-size: 36px;
+  color: #F4511E;
 }
 
 .service-item h2, .service-item p {
   width: 300px;
   margin: 0 auto;
+  padding-top: 20px;
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .services div img {
-  width: 30%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
 }
 
 .parallax-background{
@@ -76,6 +95,7 @@ nav {
 nav.overlay {
   background-color: #fff;
   box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  transition: 0.5s ease;
 }
 
 nav .logo {
@@ -85,6 +105,7 @@ nav .logo {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  margin-left: 50px;
 }
 
 nav ul {
@@ -101,6 +122,8 @@ nav li a {
   text-decoration: none;
   color: white;
   font-size: 1.3em;
+  font-family: 'Ubuntu', sans-serif;
+  margin-right: 50px;
 }
 
 nav.overlay li a {
@@ -118,15 +141,6 @@ img.center {
   margin-right: auto;
 }
 
-section.whyVFix {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-  height: 500px;
-  background-color: #4FC3F7;
-}
-
 .flexbox-grid {
   display: flex;
   margin: 0px;
@@ -141,30 +155,55 @@ section.whyVFix {
   text-align: center;
 }
 
-section .services {
+section.services {
+  background-color: #FFFFFF;
+}
+
+.service-items {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex: 4;
-  height: auto;
   min-height: 200px;
   flex-wrap: wrap;
   align-content: space-around;
 }
 
+.whyVFix {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 500px;
+}
+
+.vfixBackground {
+  background-color: #4FC3F7;
+}
+
+.vfix-title {
+  font-size: 36px;
+  text-shadow: 2px 2px black;
+  color: white;
+  text-align: center;
+  padding-top: 1em;
+}
+
 .service-item {
-  width: 25%;
+  flex: 1 0 200px;
   text-align: center;
 }
 
-
-.title {
-  margin: 10px
+h2 {
+  margin: 10px;
+  font-weight: bold;
 }
 
-.whyVFix div {
-  height: 150px;
-  width: 250px;
+.service-item p {
+  padding-top: 15px;
+  display: block;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .zoom-in * {
